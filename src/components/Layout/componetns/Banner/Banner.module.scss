@@ -1,0 +1,77 @@
+@keyframes carFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.3)),
+        url('../../../../assets/images/banner.jpg');
+}
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+
+    h1 {
+        font-size: 70px;
+    }
+    h1,
+    p {
+        animation: carFadeIn ease-out 0.5s;
+    }
+}
+.banner-btn {
+    margin-top: 40px;
+}
+
+////
+.banner-search-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 152px;
+
+    background: var(--bg-section);
+
+    .banner-search-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        .span-item {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .input-item {
+            height: 51px;
+            padding: 0 5px;
+            border: none;
+            outline-style: none;
+        }
+    }
+    .btn-search {
+        margin-top: 64px;
+    }
+}

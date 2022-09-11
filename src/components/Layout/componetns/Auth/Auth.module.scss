@@ -1,0 +1,84 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes growth {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.auth-wrap {
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    animation: fadeIn ease-in-out 1s;
+
+    .login-body,
+    .register-body {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        margin: 100px auto;
+        padding: 30px 50px 50px;
+        width: 600px;
+        height: auto;
+        background: var(--bg-section);
+        animation: growth ease-in-out 1s;
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .heading {
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            span {
+                cursor: pointer;
+                &:hover {
+                    color: var(--yellow);
+                }
+            }
+        }
+        .group {
+            input {
+                margin: 10px;
+                padding-left: 5px;
+                width: 100%;
+                height: 48px;
+                font-size: 14px;
+                font-weight: 500;
+                background-color: transparent;
+                outline-style: none;
+                border: none;
+                color: var(--white);
+                border-bottom: 2px solid #cccccc;
+            }
+        }
+        .controls {
+            Button {
+                display: flex;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+.show {
+    display: block !important;
+}

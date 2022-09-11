@@ -1,0 +1,45 @@
+.feedback-message {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 80px 0;
+    border-radius: 7px;
+    padding: 74px 98px 88px;
+    background: var(--bg-section);
+
+    .title {
+        color: var(--white);
+        display: flex;
+        margin: 0 auto 20px;
+    }
+
+    .input {
+        margin: 10px;
+        padding-left: 5px;
+        height: 48px;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent;
+        outline-style: none;
+        border: none;
+        color: var(--white);
+        border-bottom: 2px solid #cccccc;
+    }
+    .info {
+        display: flex;
+
+        .name,
+        .email {
+            width: 50%;
+        }
+    }
+    .message {
+        height: 118px;
+    }
+
+    Button {
+        width: 200px;
+        display: flex;
+        margin: 40px auto 0;
+    }
+}

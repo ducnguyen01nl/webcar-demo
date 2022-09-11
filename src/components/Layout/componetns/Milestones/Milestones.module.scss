@@ -1,0 +1,20 @@
+.Milestones-wrap {
+    margin: 100px 0;
+    .item {
+        display: flex;
+        .icon {
+            width: 68px;
+            height: 68px;
+            color: var(--bg-btn);
+            margin-right: 10px;
+        }
+        .number {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--bg-btn);
+        }
+        p {
+            color: #c2c3c3;
+        }
+    }
+}
